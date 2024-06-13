@@ -1,0 +1,17 @@
+.footer{
+    box-sizing: border-box;
+    display: block;
+    min-height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.fill {
+    min-height: 100vh;
+}
+
+.collapsed-menu-item:hover{
+    background-color: black;
+}

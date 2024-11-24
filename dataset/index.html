@@ -89,6 +89,85 @@
                   </div>
                 </div>
               </div>
+		<h5 style="margin-top: 20px;">NCL_IMD.v2 (BMVC  2024)</h5>
+            <hr>
+            <p>
+                <figure>
+                  <img src="sample.jpg" alt="NCL_IMD.v2 dataset" style="width:100%; height:auto;">
+                </figure>
+              </p>
+              <p class="justified-text">
+                The NCL_IMD.v2 dataset was proposed in the paper <span style="color: #d5006e;"> "FUSION++: A Method to Detect Generative AI Manipulated Images" </span>, submitted at the BMVC 2024 Workshop on Media Authenticity in the Age of Artificial Intelligence.
+                <br> NCL IMD.v2 dataset contains AI-manipulated images. Generated to support research in AI-manipulated image detection systems. It consists of 12k original and manipulated images along with its ground truth and prompts and spans various manipulation types, including removal, creation, replacement, and combination of manipulations. It provides a comprehensive resource for developing detection methods.
+              </p>
+
+            <div class="accordion accordion-flush">
+			  
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <strong>Description</strong>
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <figure style="text-align: center;">
+        <img src="dataset info.jpg" alt="NCL_IMD.v2 dataset" style="width:50%; height:auto;">
+      </figure>
+      <p><strong>Creation Methodology:</strong></p>
+      <ul>
+        <li>The original images in this dataset are taken from the <a href="https://cocodataset.org/" target="_blank">COCO dataset</a>.</li>
+        <li>The dataset was created in an orderly fashion using available generative AI tools such as LaMa, DALL-E, PowerPaint, and Paint by Example.</li>
+      </ul>
+
+      <p><strong>Folder Structure:</strong></p>
+      <pre>/ NCL_IMD.v2 dataset
+      │
+      ├── /Original/                <span style="color: green;"> Folder containing the original (unmodified) images.</span>
+      │
+      ├── /Manipulated/             <span style="color: green;"> Folder containing the images after manipulation.</span>
+      │
+      ├── /Mask/                    <span style="color: green;"> Folder containing ground truth mask images.</span>
+      │
+      └── /Caption/                 <span style="color: green;"> Folder containing JSON files with prompts and descriptions for each image.</span>
+      </pre>
+
+      <p><strong>Format and Size:</strong></p>
+      <ul>
+        <li><strong>Number of Images:</strong> There are 12,000 images in each of the original, manipulated, and mask folders. Each image in the original folder has a corresponding manipulated version in the manipulated folder and an associated mask (ground truth) in the mask folder.</li>
+        <li>The caption folder contains 10,000 JSON files, as images resulting from removal manipulations do not have captions.</li>
+        <li><strong>File Format:</strong> All images are in PNG format.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Download Link</strong>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Download link will be available soon.</p>
+                  </div>
+                </div>
+              </div>			  
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Licensing & citation guidelines</strong>
+                  </button>
+                </h2> 
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                        <li>This dataset is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.</li>
+                        <li>The citation for this dataset will be available soon.</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
 			 <!-- <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">

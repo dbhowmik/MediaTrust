@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Media Trust Dataset</title>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+    <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Media Trust</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                   <!-- <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+					  <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../activities/">Activities</a>
+					  <a class="nav-link" href="#">Activities</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="../workshops/">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-disabled="true" href="../tutorials/">Tutorials</a>
+                    </li>
+					<li class="nav-item">
+                      <a class="nav-link" href="../dataset/">Dataset</a>					  
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="column fill" role="main">
+        <br>
+        <div class="container">
+            <h3><strong> AI Generated iamge manipulation dataset </strong></h3>
+			<hr>
+            <p> </p>
+			<h5 style="margin-top: 20px;">NCL_IMD.v2 (BMVC  2024)</h5>
+            <hr>
+            <p>
+                <figure>
+                  <img src="sample.jpg" alt="NCL_IMD.v2 dataset" style="width:100%; height:auto;">
+                </figure>
+              </p>
+              <p class="justified-text">
+                The NCL_IMD.v2 dataset was proposed in the paper <span style="color: #d5006e;"> "FUSION++: A Method to Detect Generative AI Manipulated Images" </span>, submitted at the BMVC 2024 Workshop on Media Authenticity in the Age of Artificial Intelligence.
+                <br> NCL_IMD.v2 dataset contains AI-manipulated images. Generated to support research in AI-manipulated image detection systems. It consists of 12k original and manipulated images along with its ground truth and prompts and spans various manipulation types, including removal, creation, replacement, and combination of manipulations. It provides a comprehensive resource for developing detection methods.
+              </p>
+
+            <div class="accordion accordion-flush">
+			  
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <strong>Description</strong>
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <figure style="text-align: center;">
+        <img src="dataset info.jpg" alt="NCL_IMD.v2 dataset" style="width:50%; height:auto;">
+      </figure>
+      <p><strong>Creation Methodology:</strong></p>
+      <ul>
+        <li>The original images in this dataset are taken from the <a href="https://cocodataset.org/" target="_blank">COCO dataset</a>.</li>
+        <li>The dataset was created in an orderly fashion using available generative AI tools such as LaMa, DALL-E, PowerPaint, and Paint by Example.</li>
+      </ul>
+
+      <p><strong>Folder Structure:</strong></p>
+      <pre>/ NCL_IMD.v2 dataset
+      │
+      ├── /Original/                <span style="color: green;"> Folder containing the original (unmodified) images.</span>
+      │
+      ├── /Manipulated/             <span style="color: green;"> Folder containing the images after manipulation.</span>
+      │
+      ├── /Mask/                    <span style="color: green;"> Folder containing ground truth mask images.</span>
+      │
+      └── /Caption/                 <span style="color: green;"> Folder containing JSON files with prompts and descriptions for each image.</span>
+      </pre>
+
+      <p><strong>Format and Size:</strong></p>
+      <ul>
+        <li><strong>Number of Images:</strong> There are 12,000 images in each of the original, manipulated, and mask folders. Each image in the original folder has a corresponding manipulated version in the manipulated folder and an associated mask (ground truth) in the mask folder.</li>
+        <li>The caption folder contains 10,000 JSON files, as images resulting from removal manipulations do not have captions.</li>
+        <li><strong>File Format:</strong> All images are in PNG format.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Download Link</strong>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Download link will be available soon.</p>
+                  </div>
+                </div>
+              </div>			  
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Licensing & citation guidelines</strong>
+                  </button>
+                </h2> 
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul>
+                        <li>This dataset is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.</li>
+                        <li>Please cite the following paper if you intend to use this dataset: <br>
+                            @inproceedings{aljuaid2024fusion++,
+                                title={FUSION++: A Method to Detect Generative AI Manipulated Images},
+                                author={Aljuaid, L and Bhowmik, D},
+                                year={2024},
+                                publisher={Newcastle University}
+                              }
+                            </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+			 <!-- <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>People</strong>
+                  </button>
+                </h2> 
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p> Coming soon.
+					</p>
+                  </div>
+                </div>
+              </div> -->
+			  
+            </div>
+            <br>
+<!--
+            <h3><strong>Keynote Speakers</strong></h3>
+            <hr>
+            <p>We are pleased to annouce four confirmed speakers from Academica and Industry.</p>
+
+            <div class="accordion accordion-flush">
+			
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <strong>Touradj Ebrahimi, EPFL, Switzerland and JPEG</strong>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Touradj Ebrahimi is a professor of image processing at Ecole Polytechnique Fédérale de Lausanne (EPFL) and Director of its Multimedia Signal Processing Group. Since 2014, he has been the Convenor of the JPEG standardization Committee. Prof. Ebrahimi has founded several startup and spinoff companies in the past two decades, including the most recent RayShaper SA, a research startup company based in Switzerland involved in AI powered multimedia. His areas of interest include image and video compression, media security, quality of experience in multimedia and AI based image and video processing and analysis. Prof. Ebrahimi is a Fellow of the IEEE, SPIE, EURASIP and AAIA and has been recipient of several awards and distinctions, including an IEEE Star Innovator Award in Multimedia, an Emmy Award on behalf of JPEG and the SMPTE Progress medal. </p>
+                  </div>
+                </div>
+              </div>
+			  
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <strong>Leonard Rosenthol, Adobe Inc., USA and C2PA</strong>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Leonard Rosenthol is a Senior Principal Scientist with Adobe Systems and serves as their PDF Architect having been involved with PDF technology for almost 30 years. In 2019, he also took on the responsibility of Chief Architect for their Content Authenticity Initiative which led to him chairing the Technical Working Group of the C2PA (Coalition for Content Provenance and Authenticity). Leonard has also served as Senior Standards Representative for Adobe, where he represents Adobe on various international standards bodies including the ISO, W3C, and ETSI. Prior to joining Adobe (for the first time) in 1996, Leonard was the Director of Advanced Technology for Aladdin Systems and responsible for the development of the StuffIt line of products. </p>
+                  </div>
+                </div>
+              </div>
+			  
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <strong>Ziyuan Hu, Huawei Technologies, China</strong>
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Ziyuan Hu received the BSc degree and PhD degree from the Department of Computer Science and Engineering, Shanghai JiaoTong University. Currently, he is working as Senior Engineer in Huawei Technologies Co., Ltd. His research interests include information security and media authenticity. </p>
+                  </div>
+                </div>
+              </div>              
+			  <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <strong>Andrew Tewkesbury, Airbus Defence and Space, UK</strong>
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Andrew Tewkesbury is a Solutions Consultant within Airbus Geospatial Business. Andrew draws upon over 20 years of geospatial industry experience working on projects covering a diverse range of domains, including linear infrastructure monitoring, vegetation management, oil, gas, and mineral exploration, urban mapping and change detection, and agriculture. Andrew has a high level of technical expertise in the fields of GIS, remote sensing, image processing, and machine learning. He holds a BSc degree in geological geophysics and a PhD in remote sensing urban change detection. Andrew is actively leading Airbus's initiative on satellite image manipulation detection.</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+			<h3><strong>Organisers</strong></h3>
+            <hr>
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <strong>Deepayan Bhowmik, Newcastle University, UK</strong>
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Deepayan Bhowmik is a Senior Lecturer (Associate Professor) in Data Science and the Director of Business, Innovation and Skills, School of Computing, Newcastle University, United Kingdom. His research expertise includes fundamental image/signal processing, embedded imaging on heterogeneous hardware and related applications, e.g., media security, multimodal remote sensing for environmental monitoring, etc. Dr Bhowmik received his PhD in Electronic and Electrical Engineering (image processing major) from the University of Sheffield, UK, in 2011. He received a prestigious Dorothy Hodgkin postgraduate award and multiple research grants from various UK research councils, EU, and industry. He is one of the key editors of the upcoming JPEG Trust standard.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    <strong>Frederik Temmermans, Vrije Universiteit Brussel, Belgium</strong>
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Frederik Temmermans graduated in 2006 as a Master in Computer Science. He received a PhD in Engineering in 2014. His research focuses on image processing, interoperable access to image data and media privacy, security, authenticity and integrity. He has been involved in various research projects in the medical, mobile and cultural domains. Frederik is an active member of the JPEG standardization committee (ISO/IEC JTC1/SC29/WG1) where he contributed to several standards such as JPSearch (ISO/IEC 24800), the JPEG Universal Metadata Box Format (ISO/IEC 19566-5) and JPEG Privacy and Security (ISO/IEC 19566-4) and chaired exploration studies on Media Blockchain, Fake Media and NFT. Frederik is also co-founder of the VUB spin-off company Universum Digitalis. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    <strong>Sabrina Caldwell, Australian National University, Australia</strong>
+                  </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Sabrina Caldwell is a senior lecturer and researcher at The Australian National University. Her area of research interest centers on images, specifically photo credibility. Key to her research is the important distinction between photographs (photos of real people, places and events) and manipulated images or photoart (images created or changed by image manipulation software and/or Artificial Intelligence). She works in the area of physicological signal processing using neural networks, deep learning and bio-inspired computing, particularly as it pertains to human recognition of deception and affective reasoning. She is a member JPEG Committee; Co-chair of JPEG Trust and Co-editor of new international JPEG ISO standard on image credibility under development.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <br> -->
+    </main>
+     <footer class="bg-dark text-center text-white text-lg-start p-5">
+      <!-- Copyright -->
+         <div class="row">
+             <div class="col-12 col-md-4">
+                <p class="text-left p-3"><strong>Media Trust</strong></p>
+             </div>
+             <div class="col-12 col-md-4">
+                 <p class="text-center p-3">© 2024 Copyright</p>
+             </div>
+             <div class="col-12 col-md-4">
+                <nav class="navbar  navbar-expand-lg  navbar-dark">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!--<li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+						  <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../activities/">Activities</a>
+						  <a class="nav-link" href="#">Activities</a>
+                        </li> -->
+                        <li class="nav-item">
+                          <a class="nav-link" href="../workshops/">Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-disabled="true" href="../tutorials/">Tutorials</a>
+                        </li>
+                    </ul>
+                </nav>
+              <!-- Copyright -->
+             </div>
+         </div>
+    </footer>
+</body>
+</html>
+
+
